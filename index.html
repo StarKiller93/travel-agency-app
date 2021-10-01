@@ -98,6 +98,29 @@
 
     <!-- Hero Section  -->
     <section class="hero">
+      <!-- Video Popup  -->
+      <div class="hero__video-pop">
+        <div class="wrapper">
+          <div class="hero__iframe">
+            <iframe
+              class="responsive-iframe"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Xj4E0Zry6K4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <ion-icon
+          name="close-outline"
+          class="hero__vid-icon"
+          onclick="videoPopup();"
+        ></ion-icon>
+      </div>
+
       <div class="hero__bg-svg">
         <img src="/images/hero-bg.svg" alt="" />
       </div>
@@ -114,7 +137,7 @@
           </p>
           <div class="hero__cta">
             <a href="#" class="btn">Find out more</a>
-            <div class="hero__demo">
+            <div class="hero__demo" onclick="videoPopup();">
               <ion-icon name="play"></ion-icon>
               <span>Play Demo</span>
             </div>

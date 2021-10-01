@@ -19,3 +19,14 @@ function scrollUp() {
   else scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
+
+// Video Pop-up
+function videoPopup() {
+  const videoBox = document.querySelector(".hero__video-pop");
+  videoBox.classList.toggle("showVideo");
+  const iframe = document.querySelector(".responsive-iframe");
+  if (iframe !== null) {
+    const iframeSrc = iframe.src;
+    iframe.src = iframeSrc;
+  }
+}
