@@ -1,0 +1,147 @@
+@use "../util" as *;
+
+.header {
+  width: 100%;
+  padding: 2.5rem 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+
+  .container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  &__nav-link {
+    font-size: 1.7rem;
+    color: #212832;
+    transition: all 0.2s;
+
+    &:hover {
+      color: #4d535b;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  &__cta-login {
+    color: #212832;
+    transition: all 0.2s;
+
+    &:hover {
+      color: #4d535b;
+    }
+  }
+
+  &__cta-signup {
+    padding: 0.7rem 2.1rem;
+    border-radius: 0.5rem;
+    color: #212832;
+    box-shadow: inset 0 0 0 1px #212832;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: #fff;
+      box-shadow: none;
+    }
+  }
+
+  &__lang {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.65rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+
+    &:hover {
+      color: #4d535b;
+    }
+
+    &:hover .header__lang-list {
+      display: block;
+    }
+  }
+
+  &__lang-list {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+}
+
+// MOBILE
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  z-index: 20000;
+}
+
+.mobile-nav-icon {
+  font-size: 2.8rem;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+// Sticky Navigation
+.sticky .header {
+  max-height: 9.6rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0px 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 8rem;
+}
+
+.sticky .hero {
+  margin-top: 9.2rem;
+}

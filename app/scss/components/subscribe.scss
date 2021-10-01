@@ -1,0 +1,66 @@
+.subscribe {
+  padding: 0 0 15rem 0;
+  text-align: center;
+
+  &__box {
+    padding: 7.9rem 0;
+    background: #f4f1fd;
+    border-radius: 129px 20px 20px 20px;
+    position: relative;
+
+    &::before {
+      content: url(/images/subs-send.svg);
+      position: absolute;
+      right: -25px;
+      top: -20px;
+    }
+
+    &::after {
+      content: url(/images/subs-dots.svg);
+      position: absolute;
+      right: -100px;
+      bottom: -75px;
+    }
+  }
+
+  &__text {
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: var(--text-color-2);
+    line-height: 5.4rem;
+    margin-bottom: 7rem;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    z-index: 1000;
+
+    .input {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      padding: 1.8rem 3rem;
+      background-color: #fff;
+      border-radius: 1rem;
+      width: 42.1rem;
+    }
+  }
+
+  input {
+    background-color: transparent;
+    width: 100%;
+    &::placeholder {
+      font-size: 1.4rem;
+      color: #39425d;
+    }
+  }
+
+  .btn {
+    cursor: pointer;
+    padding: 2rem 5rem;
+    background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+  }
+}

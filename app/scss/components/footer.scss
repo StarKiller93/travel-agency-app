@@ -1,0 +1,105 @@
+@use "../util" as *;
+
+.footer {
+  padding: 0 0 8.5rem 0;
+  .grid {
+    grid-template-columns: 2fr repeat(3, 1fr) 2fr;
+    // align-items: center;
+    justify-items: center;
+  }
+
+  &__logo {
+    font-size: 4.4rem;
+    font-weight: 500;
+    line-height: 4.4rem;
+    margin-bottom: 1.8rem;
+  }
+
+  &__text {
+    font-size: 1.3rem;
+    color: var(--text-color-2);
+    line-height: 1.5rem;
+  }
+
+  &__title {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 3.4rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__link {
+    font-size: 1.8rem;
+    color: var(--text-color-2);
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      padding: 1.6rem;
+      background: #ffffff;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      transition: all 1s;
+
+      &:hover {
+        background: conic-gradient(
+          from 180deg at 50% 50%,
+          #b8d2f1 0deg,
+          #f289aa 60deg,
+          #c68bf0 106.09deg,
+          #d164da 153.75deg,
+          #c963e8 221.25deg,
+          #bfc2e8 258.75deg,
+          #ffc999 288.75deg,
+          #d0d8c9 315deg,
+          #bad0f1 334.13deg,
+          #ced8cb 358.97deg,
+          rgba(255, 255, 255, 0) 360deg
+        );
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      &:hover .footer__social-icon {
+        color: #fff;
+      }
+    }
+  }
+
+  &__social-icon {
+    font-size: 5rem;
+    color: #000;
+  }
+
+  &__social-text {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-color-2);
+    margin-bottom: 1.5rem;
+  }
+
+  &__app {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.4rem;
+}

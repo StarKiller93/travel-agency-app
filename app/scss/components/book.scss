@@ -1,0 +1,41 @@
+.book {
+  margin-bottom: 15rem;
+
+  .grid {
+    align-items: center;
+  }
+
+  &__left {
+    justify-self: center;
+  }
+
+  .section-title {
+    margin-bottom: 3rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__box {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: var(--text-color-2);
+  }
+
+  &__text {
+    color: var(--text-color-2);
+  }
+}

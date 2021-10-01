@@ -1,0 +1,79 @@
+.destination {
+  padding: 0 0 15rem 0;
+  position: relative;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
+
+    &::after {
+      content: url(/images/spiral.svg);
+      position: absolute;
+      right: 50px;
+      bottom: 100px;
+      z-index: -100;
+    }
+  }
+  &__card {
+    display: grid;
+    grid-template-columns: 31.4rem;
+    grid-template-rows: 32.7rem 13rem;
+    grid-template-areas: "img" "text";
+
+    z-index: 100;
+
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 2.4rem;
+    overflow: hidden;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__card:nth-child(1) {
+    justify-self: end;
+  }
+
+  &__card:nth-child(3) {
+    justify-self: start;
+  }
+
+  &__img-box {
+    grid-area: img;
+    overflow: hidden;
+  }
+
+  &__text-box {
+    grid-area: text;
+    padding: 2.8rem 2.2rem;
+    z-index: 100;
+    background-color: #fff;
+
+    p {
+      color: var(--text-color-2);
+    }
+
+    div {
+      display: flex;
+    }
+  }
+
+  &__text-box-1 {
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__text-box-2 {
+    gap: 1rem;
+  }
+}

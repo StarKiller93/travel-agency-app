@@ -1,0 +1,23 @@
+.brand {
+  padding: 0 0 15rem 0;
+
+  .grid {
+    align-items: center;
+    justify-items: center;
+    column-gap: 0.5rem;
+  }
+
+  &__img {
+    justify-self: center;
+    align-items: center;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+
+    background: #ffffff;
+
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+}

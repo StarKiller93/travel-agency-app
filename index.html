@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Jadoo | Travel, enjoy and live a new and full life.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="/dist/script.js"></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section  -->
+    <header class="header">
+      <div class="container">
+        <a class="header__logo" href="index.html"
+          ><img src="/images/logo.svg" alt="Logo"
+        /></a>
+
+        <div class="header__nav-box">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li>
+                <a class="header__nav-link" href="#destination">Desitnations</a>
+              </li>
+              <li><a class="header__nav-link" href="#">Hotels</a></li>
+              <li><a class="header__nav-link" href="#brand">Flights</a></li>
+              <li><a class="header__nav-link" href="#book">Bookings</a></li>
+            </ul>
+            <div class="header__cta">
+              <a class="header__cta-login" href="#">Login</a>
+              <a class="header__cta-signup" href="#subscribe">Sign up</a>
+            </div>
+          </nav>
+          <button class="btn-mobile-nav">
+            <i class="ri-menu-line mobile-nav-icon" name="menu-outline"></i>
+            <i class="ri-close-line mobile-nav-icon" name="close-outline"></i>
+          </button>
+          <div class="header__lang">
+            <span>Eng</span><img src="assets/img/arrow-down.svg" alt="" />
+            <ul class="header__lang-list">
+              <li><a href="#">KGZ</a></li>
+              <li><a href="#">RUS</a></li>
+              <li><a href="#">CNY</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End of Header Section  -->
+
+    <!-- Hero Section  -->
+    <section class="hero">
+      <div class="hero__bg-svg">
+        <img src="/images/hero-bg.svg" alt="" />
+      </div>
+      <div class="container">
+        <div class="hero__left">
+          <p class="hero__name">Best Destinations around the world</p>
+          <h1 class="heading-primary">
+            Travel, enjoy and live a new and full life
+          </h1>
+          <p class="hero__text">
+            Built Wicket longer admire do barton vanity itself do in it.
+            Preferred to sportsmen it engrossed listening. Park gate sell they
+            west hard for the.
+          </p>
+          <div class="hero__cta">
+            <a href="#" class="btn">Find out more</a>
+            <div class="hero__demo">
+              <ion-icon name="play"></ion-icon>
+              <span>Play Demo</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__right">
+          <img src="/images/hero-character1.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- End of Hero Section  -->
+
+    <!-- Service Section  -->
+    <section class="service">
+      <div class="container">
+        <div class="section-subheading section-subheading--center">
+          Category
+        </div>
+        <div class="section-title section-title--center">
+          We Offer Best Services
+        </div>
+      </div>
+
+      <div class="container service__cards">
+        <!-- Service 01 -->
+        <div class="service__box">
+          <img
+            class="service__icon"
+            src="/images/service-1.svg"
+            alt="service-1"
+          />
+          <p class="service__title">Calculated Weather</p>
+          <p class="service__text">
+            Built Wicket longer <br />
+            admire do barton <br />
+            vanity itself do in it.
+          </p>
+        </div>
+        <!-- Service 02 -->
+        <div class="service__box">
+          <img
+            class="service__icon"
+            src="/images/service-4.svg"
+            alt="service-1"
+          />
+          <p class="service__title">Best Flights</p>
+          <p class="service__text">
+            Engrossed listening. <br />
+            Park gate sell they <br />
+            west hard for the.
+          </p>
+        </div>
+        <!-- Service 03 -->
+        <div class="service__box">
+          <img
+            class="service__icon"
+            src="/images/service-3.svg"
+            alt="service-1"
+          />
+          <p class="service__title">Local Events</p>
+          <p class="service__text">
+            Barton vanity itself do <br />
+            in it. Preferd to men it <br />
+            engrossed listening.
+          </p>
+        </div>
+        <!-- Service 04 -->
+        <div class="service__box">
+          <img
+            class="service__icon"
+            src="/images/service-4.svg"
+            alt="service-1"
+          />
+          <p class="service__title">Customization</p>
+          <p class="service__text">
+            We deliver outsourced <br />
+            aviation services for <br />
+            military customers
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End of Service Section  -->
+
+    <!-- Destination Section  -->
+    <section class="destination" id="destination">
+      <div class="container">
+        <div class="section-subheading section-subheading--center">
+          Top Selling
+        </div>
+        <div class="section-title section-title--center">Top Destinations</div>
+      </div>
+
+      <div class="container destination__list">
+        <!-- Destination 01 -->
+        <div class="destination__card">
+          <div class="destination__img-box">
+            <img
+              src="/images/destination-1.png"
+              alt="destination-1"
+              class="destination__img"
+            />
+          </div>
+          <div class="destination__text-box">
+            <div class="destination__text-box-1">
+              <p class="destination__city">Rome, Italy</p>
+              <p class="destination__price">$5.42k</p>
+            </div>
+            <div class="destination__text-box-2">
+              <img src="/images/send-1.svg" alt="send" />
+              <p class="destination__days">10 days trip</p>
+            </div>
+          </div>
+        </div>
+        <!-- Destination 02 -->
+        <div class="destination__card">
+          <div class="destination__img-box">
+            <img
+              src="/images/destination-2.png"
+              alt="destination-1"
+              class="destination__img"
+            />
+          </div>
+          <div class="destination__text-box">
+            <div class="destination__text-box-1">
+              <p class="destination__city">London, UK</p>
+              <p class="destination__price">$4.2k</p>
+            </div>
+            <div class="destination__text-box-2">
+              <img src="/images/send-1.svg" alt="send" />
+              <p class="destination__days">12 Days Trip</p>
+            </div>
+          </div>
+        </div>
+        <!-- Destination 03 -->
+        <div class="destination__card">
+          <div class="destination__img-box">
+            <img
+              src="/images/destination-3.png"
+              alt="destination-1"
+              class="destination__img"
+            />
+          </div>
+          <div class="destination__text-box">
+            <div class="destination__text-box-1">
+              <p class="destination__city">Full Europe</p>
+              <p class="destination__price">$15k</p>
+            </div>
+            <div class="destination__text-box-2">
+              <img src="/images/send-1.svg" alt="send" />
+              <p class="destination__days">28 Days Trip</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Destination Section  -->
+
+    <!-- Book Section  -->
+    <section class="book" id="book">
+      <div class="container grid grid--2-cols">
+        <div class="book__left">
+          <p class="section-subheading">Easy and Fast</p>
+          <p class="section-title">
+            Book your next trip <br />
+            in 3 easy steps
+          </p>
+          <div class="book__content">
+            <!-- Book Box 01 -->
+            <div class="book__box">
+              <div class="book__icon">
+                <img src="/images/book-2.svg" alt="book-2" />
+              </div>
+              <div class="book__text-box">
+                <p class="book__title">Choose Destination</p>
+                <p class="book__text">
+                  Lorem ipsum dolor sit amet, consectetur <br />
+                  adipiscing elit. Urna, tortor tempus.
+                </p>
+              </div>
+            </div>
+
+            <!-- Book Box 02 -->
+            <div class="book__box">
+              <div class="book__icon">
+                <img src="/images/book-3.svg" alt="book-2" />
+              </div>
+              <div class="book__text-box">
+                <p class="book__title">Make Payment</p>
+                <p class="book__text">
+                  Lorem ipsum dolor sit amet, consectetur <br />
+                  adipiscing elit. Urna, tortor tempus.
+                </p>
+              </div>
+            </div>
+
+            <!-- Book Box 03 -->
+            <div class="book__box">
+              <div class="book__icon">
+                <img src="/images/book-4.svg" alt="book-2" />
+              </div>
+              <div class="book__text-box">
+                <p class="book__title">Reach Airport on Selected Date</p>
+                <p class="book__text">
+                  Lorem ipsum dolor sit amet, consectetur <br />
+                  adipiscing elit. Urna, tortor tempus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="book__right">
+          <img src="/images/book-1.png" alt="book-1" />
+        </div>
+      </div>
+    </section>
+    <!-- End of Book Section  -->
+
+    <!-- Brand Section  -->
+    <section class="brand">
+      <div class="container grid grid--5-cols">
+        <div class="brand__box">
+          <img class="brand__img" src="/images/brand-1.png" alt="Brand" />
+        </div>
+        <div class="brand__box">
+          <img class="brand__img" src="/images/brand-2.png" alt="Brand" />
+        </div>
+        <div class="brand__box">
+          <img class="brand__img" src="/images/brand-3.png" alt="Brand" />
+        </div>
+        <div class="brand__box">
+          <img class="brand__img" src="/images/brand-4.png" alt="Brand" />
+        </div>
+        <div class="brand__box">
+          <img class="brand__img" src="/images/brand-5.png" alt="Brand" />
+        </div>
+      </div>
+    </section>
+    <!-- End of Brand Section  -->
+
+    <!-- Subscribe Section  -->
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe__box">
+          <div class="subscribe__text-box">
+            <p class="subscribe__text">
+              Subscribe to get information, latest news and other <br />
+              interesting offers about Cobham
+            </p>
+          </div>
+          <form class="form">
+            <div class="input">
+              <img src="/images/email.svg" alt="Email" />
+              <input type="email" placeholder="Your email" required />
+            </div>
+
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End of Subscribe Section  -->
+
+    <!-- Footer Section  -->
+    <footer class="footer">
+      <div class="container grid">
+        <!-- Footer Brand  -->
+        <div class="footer__brand">
+          <p class="footer__logo">Jadoo.</p>
+          <p class="footer__text">
+            Book your trip in minute, get full <br />
+            Control for much longer.
+          </p>
+        </div>
+        <!-- Footer Box 01 -->
+        <div class="footer__box">
+          <p class="footer__title">Company</p>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">About</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+            <li><a href="#" class="footer__link">Mobile</a></li>
+          </ul>
+        </div>
+        <!-- Footer Box 02 -->
+        <div class="footer__box">
+          <p class="footer__title">Contact</p>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Help/FAQ</a></li>
+            <li><a href="#" class="footer__link">Press</a></li>
+            <li><a href="#" class="footer__link">Affilates</a></li>
+          </ul>
+        </div>
+        <!-- Footer Box 03 -->
+        <div class="footer__box">
+          <p class="footer__title">More</p>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Airlinefees</a></li>
+            <li><a href="#" class="footer__link">Airline</a></li>
+            <li><a href="#" class="footer__link">Low fare tips</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <div class="footer__social-link">
+            <a href="#"
+              ><ion-icon
+                name="logo-facebook"
+                class="footer__social-icon"
+              ></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon
+                name="logo-instagram"
+                class="footer__social-icon"
+              ></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon
+                name="logo-twitter"
+                class="footer__social-icon"
+              ></ion-icon
+            ></a>
+          </div>
+          <p class="footer__social-text">Discover our app</p>
+          <div class="footer__app">
+            <a href="#"><img src="/images/Google.svg" alt="Google" /></a>
+            <a href="#"><img src="/images/PlayStore.svg" alt="Apple" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright">
+        All rights <span class="year">2028</span> reserved@jadoo.co
+      </div>
+    </footer>
+    <!-- End of Footer Section  -->
+  </body>
+</html>
