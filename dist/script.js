@@ -1,0 +1,2 @@
+"use strict";var sectionHeroEl=document.querySelector(".hero"),obs=new IntersectionObserver((function(e){var r=e[0];console.log(r),!1===r.isIntersecting&&document.body.classList.add("sticky"),!0===r.isIntersecting&&document.body.classList.remove("sticky")}),{root:null,threshold:0,rootMargin:"-80px"});obs.observe(sectionHeroEl);var yearEl=document.querySelector(".year"),currentYear=(new Date).getFullYear();yearEl.textContent=currentYear;
+//# sourceMappingURL=script.js.map
